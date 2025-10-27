@@ -59,4 +59,11 @@ ENV/
 .ipynb_checkpoints
 
 # Streamlit
-.streamlit/
+.streamlit/__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.tmp
+.DS_Store
+.env
+
