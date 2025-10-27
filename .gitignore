@@ -1,7 +1,7 @@
 # .gitignore
 
 # Data and models (don't upload large files)
-data/
+# data/
 *.pth
 *.pkl
 *.pt
@@ -67,3 +67,8 @@ ENV/
 .DS_Store
 .env
 
+# Allow dataset folder
+!data/
+!data/**/
+!data/**/*.jpg
+!data/**/*.png
