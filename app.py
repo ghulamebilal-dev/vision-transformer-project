@@ -9,11 +9,11 @@ repo_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(repo_dir)
 
 try:
-    st.info("Ensuring model files are available (using Git LFS)...")
+   # st.info("Ensuring model files are available (using Git LFS)...")
     # Initialize and pull Git LFS
     subprocess.run(["git", "lfs", "install"], check=True)
     subprocess.run(["git", "lfs", "pull"], check=True)
-    st.success("✅ Model files pulled successfully using Git LFS.")
+    #st.success("✅ Model files pulled successfully using Git LFS.")
 except subprocess.CalledProcessError as e:
     st.error(f"❌ Git LFS failed: {e.stderr}")
     st.error("Please ensure Git LFS is set up correctly in the repository.")
