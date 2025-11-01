@@ -1,0 +1,4 @@
+Model,Accuracy,Total_Parameters,Type,Description
+Custom Vision Transformer,0.81,85806346,vit,ViT implemented from scratch
+Hybrid CNN+Transformer,1.0,30461002,hybrid,ResNet18 features + Transformer encoder
+Pretrained ViT (Fine-tuned),1.0,85806346,pretrained_vit,"ViT-Base from timm, fine-tuned"

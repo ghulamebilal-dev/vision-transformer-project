@@ -1,0 +1,4 @@
+Model,Accuracy,Total Parameters,Trainable Parameters,Type
+Custom Vision Transformer,0.810,"85,806,346","85,806,346",vit
+Hybrid CNN+Transformer,1.000,"30,461,002","30,461,002",hybrid
+Pretrained ViT (Fine-tuned),1.000,"85,806,346","85,806,346",pretrained_vit

@@ -1,0 +1,26 @@
+{
+  "classes": [
+    "animals",
+    "birds",
+    "cars",
+    "electronics",
+    "flowers",
+    "fruits",
+    "furniture",
+    "humans",
+    "landscapes",
+    "vegetables"
+  ],
+  "class_to_idx": {
+    "animals": 0,
+    "birds": 1,
+    "cars": 2,
+    "electronics": 3,
+    "flowers": 4,
+    "fruits": 5,
+    "furniture": 6,
+    "humans": 7,
+    "landscapes": 8,
+    "vegetables": 9
+  }
+}
