@@ -1,3 +1,21 @@
+
+import subprocess
+import os
+import streamlit as st
+
+# Ensure Git LFS files are pulled
+repo_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(repo_dir)
+try:
+    st.info("Ensuring model files are available (using Git LFS)...")
+    subprocess.run(["git", "lfs", "pull"], check=True, capture_output=True, text=True)
+    st.success("Model files are ready.")
+except subprocess.CalledProcessError as e:
+    st.error(f"Error pulling Git LFS files: {e.stderr}")
+    st.error("Please ensure Git LFS is set up correctly in the repository.")
+except FileNotFoundError:
+    st.error("Git LFS command not found. Please ensure Git LFS is installed.")
+
 import streamlit as st
 import torch
 import torch.nn.functional as F
